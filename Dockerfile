@@ -17,7 +17,8 @@ RUN apt-get -qq update && apt-get -qq install -y \
     tar \
     uuid-dev \
     libedit-dev \
-    libjansson-dev
+    libjansson-dev \
+    libsrtp0-dev
 
 WORKDIR /tmp/
 
@@ -35,6 +36,7 @@ RUN menuselect/menuselect \
   --enable res_snmp \
   --enable res_http_websocket \
   --enable res_rtp_asterisk \
+  --enable res_srtp \
   menuselect.makeopts
 
 # Continue with a standard make.
