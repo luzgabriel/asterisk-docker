@@ -13,4 +13,3 @@ services:
     network_mode: "host"
     volumes:
         - "${ASTERISK_CONF:-./conf}:/etc/asterisk"
-    restart: "always"
