@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.7'
 services:
   asterisk:
     build: 
@@ -12,5 +12,5 @@ services:
         max-file: "1"
     network_mode: "host"
     volumes:
-        - "./conf:/etc/asterisk"
+        - "${ASTERISK_CONF:-./conf}:/etc/asterisk"
     restart: "always"
