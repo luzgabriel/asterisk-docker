@@ -1,7 +1,7 @@
 # Asterisk Docker aliases
 
 bash asterisk-docker-container(){
-    docker-compose -f ~/repos/asterisk-docker/docker-compose.yml $*;
+    docker-compose -f ~/.asterisk-docker/docker-compose.yml $*;
 }
 
 bash asterisk-docker(){
