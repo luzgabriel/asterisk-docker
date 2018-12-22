@@ -8,7 +8,7 @@ RUN apt-get -qq update && apt-get -qq install -y \
     libncurses5-dev \
     libnewt-dev \
     libxml2-dev \
-    linux-headers-$(uname -r) \
+    linux-headers-generic \
     libsqlite3-dev \
     uuid-dev \
     libelf-dev \
